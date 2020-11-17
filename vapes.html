@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script> function myFunction(item_name, flavor, cost, quantity) {
+        localStorage.setItem(item_name, JSON.stringify([flavor, cost.toString(), quantity]))
+    }</script>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Exotic Deals - vapes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Exotic Deals</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <!-- /.col-lg-3 -->
+
+
+            <div class="col-lg-12">
+                <!-- <br><br>
+                <h5>
+                    <center> Specials </center>
+                </h5>
+                <br>
+
+                <b>West Coast Cure:</b> 2 for 70 <br><br>
+                <b>Stiizy: </b> 2 for 80 <br><br>
+                <b>Raw Garden:</b> 2 for 80 <br><br>
+
+                <br><br> -->
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+
+                            <div class="zoom">
+                                <a href="#"><img class="card-img-top" src="imgs/raw.jpeg" alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Raw Garden</a>
+                                </h4>
+                                <h3>$45 (2 for 80)</h3>
+
+                                <select name="Flavor" id="flavor_0">
+                                    <option value="Surf Beast">Surf Beast</option>
+                                    <option value="Lemon Drop">Lemon Drop</option>
+                                    <option value="Strawberry Tart">Strawberry Tart</option>
+                                    <option value="Lime Mojito">Lime Mojito</option>
+                                    <option value="Hula Dancer">Hula Dancer</option>
+                                    <option value="Slurry Temple">Slurry Temple</option>
+                                    <option value="Sunrise OG">Sunrise OG</option>
+                                    <option value="Dojo Kush">Dojo Kush</option>
+
+                                </select><br>
+
+                                <label for="quantity0">Quantity:</label> <br>
+                                <input type="number" id="quantity1" name="quantity1" min="0" max="100">
+
+
+
+                                <button
+                                    onclick="myFunction('Raw Garden', document.getElementById('flavor_0').value, 40, document.getElementById('quantity0').value)">Add
+                                    to cart</button>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+
+                            <div class="zoom">
+                                <a href="#"><img class="card-img-top" src="imgs/alpine.jpeg" alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Alpine</a>
+                                </h4>
+                                <h3>$40</h3>
+
+                                <select name="Flavor" id="flavor_1">
+                                    <option value="Jack Herrer">Jack Herrer</option>
+                                </select><br>
+
+                                <label for="quantity1">Quantity:</label> <br>
+                                <input type="number" id="quantity1" name="quantity1" min="0" max="100">
+
+
+
+                                <button
+                                    onclick="myFunction('Alpine', document.getElementById('flavor_1').value, 40, document.getElementById('quantity1').value)">Add
+                                    to cart</button>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/bigchief.jpeg" alt=""></div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Big Chief</a>
+                                </h4>
+                                <h3>$40</h3>
+
+                                <select name="Flavor" id="flavor_2">
+                                    <option value="Napalm OG">Napalm OG</option>
+                                    <option value="White Widow">White Widow</option>
+                                    <option value="Blackwater OG">Blackwater OG</option>
+                                    <option <value="OG Kush">OG Kush</option>
+                                </select><br>
+
+
+                                <label for="quantity2">Quantity:</label> <br>
+                                <input type="number" id="quantity2" name="quantity2" min="0" max="100">
+
+                                <button
+                                    onclick="myFunction('Big Chief', document.getElementById('flavor_2').value, 40, document.getElementById('quantity2').value)">Add
+                                    to cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/bloom.jpeg" alt=""> </div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Bloom</a>
+                                </h4>
+                                <h3>$40</h3>
+
+                                <select name="Flavor" id="flavor_3">
+                                    <option value="Jack Herrer">Jack Herrer</option>
+                                    <option value="Green Crack">Green Crack</option>
+                                    <option value="Champagne Kush">Champagne Kush</option>
+                                    <option value="Blue Dream">Blue Dream</option>
+                                    <option value="Maui Wowie">Maui Wowie</option>
+                                </select><br>
+
+                                <label for="quantity3">Quantity:</label> <br>
+                                <input type="number" id="quantity3" name="quantity3" min="0" max="100">
+
+                                <button
+                                    onclick="myFunction('Bloom', document.getElementById('flavor_3').value, 40, document.getElementById('quantity3').value)">Add
+                                    to cart</button>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/bobby.jpeg" alt=""></div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Bobby Blue Clear</a>
+                                </h4>
+                                <h3>$40</h3>
+
+
+                                <label for="quantity4">Quantity:</label> <br>
+                                <input type="number" id="quantity4" name="quantity4" min="0" max="100">
+
+                                <button
+                                    onclick="myFunction('Bobby Blue Clear', 'n/a', 40, document.getElementById('quantity4').value)">Add
+                                    to cart</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/stiizy.jpeg" alt=""></div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Stiizy</a>
+                                </h4>
+                                <h3>$45 (2 for 80)</h3>
+    
+    
+                                <select name="Flavor" id="flavor_6">
+                                    <option value="Strawberry Cough">Strawberry Cough</option>
+                                    <option value="Strawnana">Strawnana</option>
+                                    <option value="Purple Punch">Purple Punch</option>
+                                    <option value="Do-Si-Dos">Do-Si-Dos</option>
+                                    <option value="Pineapple Express">Pineapple Express</option>
+                                    <option value="Blue Burst">Blue Burst</option>
+                                </select><br>
+    
+                                <label for="quantity5">Quantity:</label> <br>
+                                <input type="number" id="quantity6" name="quantity6" min="0" max="100">
+    
+                                <button
+                                    onclick="myFunction('Stiizy', document.getElementById('flavor_6').value, 45, document.getElementById('quantity6').value)">Add
+                                    to cart
+                                </button>
+    
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/cookies.jpeg" alt=""></div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Cookies Rosin</a>
+                                </h4>
+                                <h3>$45</h3>
+    
+
+                                <select name="Flavor" id="flavor_10">
+                                    <option value="Sweet Tea">Sweet Tea</option>
+                                    <option value="Pomelo">Pomelo</option>
+                                    <option value="Gary Payton">Gary Patyon</option>
+                                    <option value="Pink Rosay">Pink Rosay</option>
+                                    <option value="Honey Bun">Honey Bun</option>
+                                    <option value="Georgia Pie">Georgia Pie</option>
+                                    <option value="Collins">Collins</option>
+                                </select><br>
+    
+                                <label for="quantity10">Quantity:</label> <br>
+                                <input type="number" id="quantity10" name="quantity10" min="0" max="100">
+    
+                                <button
+                                    onclick="myFunction('Cookies Rosin', document.getElementById('flavor_10').value, 45, document.getElementById('quantity10').value)">Add
+                                    to cart
+                                </button>
+    
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/wcc.jpeg" alt=""></div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">West Coast Cure</a>
+                                </h4>
+                                <h3>$4 (2 for 80)</h3>
+    
+
+                                <select name="Flavor" id="flavor_11">
+                                    <option value="Gorilla Glue #4">Gorilla Glue #4</option>
+                                    <option value="Lucky Charms">Lucky Charms</option>
+                                    <option value="Train Wreck">Train Wreck</option>
+                                    <option value="Foreign Glue">Foreign Glue</option>
+                                    <option value="Banjo">Bajuo</option>
+                                    <option value="Grape Gas">Grape Gas</option>
+                                </select><br>
+    
+                                <label for="quantity11">Quantity:</label> <br>
+                                <input type="number" id="quantity11" name="quantity11" min="0" max="100">
+    
+                                <button
+                                    onclick="myFunction('West Coast Cure', document.getElementById('flavor_11').value, 45, document.getElementById('quantity11').value)">Add
+                                    to cart
+                                </button>
+    
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/wcc.jpeg" alt=""></div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">West Coast Cure</a>
+                                </h4>
+                                <h3>$45</h3>
+    
+
+                                <select name="Flavor" id="flavor_11">
+                                    <option value="Gorilla Glue #4">Gorilla Glue #4</option>
+                                    <option value="Lucky Charms">Lucky Charms</option>
+                                    <option value="Train Wreck">Train Wreck</option>
+                                    <option value="Foreign Glue">Foreign Glue</option>
+                                    <option value="Banjo">Bajuo</option>
+                                    <option value="Grape Gas">Grape Gas</option>
+                                </select><br>
+    
+                                <label for="quantity11">Quantity:</label> <br>
+                                <input type="number" id="quantity11" name="quantity11" min="0" max="100">
+    
+                                <button
+                                    onclick="myFunction('West Coast Cure', document.getElementById('flavor_11').value, 45, document.getElementById('quantity11').value)">Add
+                                    to cart
+                                </button>
+    
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#">
+                                <div class='zoom'><img class="card-img-top" src="imgs/lion.jpeg" alt="">
+                            </a></div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">Lions Breath</a>
+                            </h4>
+                            <h3>$40</h3>
+
+
+                            <select name="Flavor" id="flavor_12">
+                                <option value="Blueberry OG">Blueberry OG</option>
+                                <option value="Mimosa">Mimosa</option>
+                                <option value="Blue Dream">Blue Dream</option>
+                                <option value="Jack Herer">Jack Herer</option>
+                                <option value="Mango Kush">Mango Kush</option>
+                                <option value="Skywalker OG">Skywalker OG</option>
+                            </select><br>
+
+                            <label for="quantity12">Quantity:</label> <br>
+                            <input type="number" id="quantity12" name="quantity12" min="0" max="100">
+
+                            <button
+                                onclick="myFunction('Lions Breath', document.getElementById('flavor_12').value, 40, document.getElementById('quantity12').value)">Add
+                                to cart</button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    </div>
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Exotic Deals 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
