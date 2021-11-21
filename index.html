@@ -20,7 +20,13 @@
 
 <script type="text/javascript">
 	var uid = window.location.search;
-	firebase.database().ref('c').push(uid, function(error){window.location.href = "https://greenrushsd.com/"})
+	if (uid.length > 0) {
+    		console.log("pushing & redirecting")
+      		firebase.database().ref('c').push(uid, function(error){window.location.href = "https://greenrushsd.com/"})
+  	} else {
+    		console.log("redirecting")
+    		window.location.href = "https://greenrushsd.com/"
+  	}
 </script>
 
 
