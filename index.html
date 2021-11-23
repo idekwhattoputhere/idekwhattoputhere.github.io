@@ -21,12 +21,13 @@
 <script type="text/javascript">
 	var uid = window.location.search;
 	console.log(uid);
-	if (uid.substring(1, 5) == 'grsd') {
-		firebase.database().ref('c').push(uid, function(error){window.location.href = "https://greenrushsd.com/"})
-	} else if (uid.substring(1, 5) == 'sdrem') {
+	
+	if (uid.substring(1, 5) == 'sdrm') {
 		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/flower"})
 	} else if (uid.substring(1, 5) == 'remd') {
 		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://remedydeliverysd.com/flower"})
+	} else {
+		firebase.database().ref('c').push(uid, function(error){window.location.href = "https://greenrushsd.com/"})
 	}
 </script>
 
