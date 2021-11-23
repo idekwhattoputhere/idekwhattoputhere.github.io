@@ -19,7 +19,16 @@
 </script>
 
 <script type="text/javascript">
-	window.location.href = "https://greenrushsd.com/"
+	var uid = window.location.search;
+	if (uid.substring(0, 4) == 'grsd') {
+		firebase.database().ref('c').push(uid, function(error){window.location.href = "https://greenrushsd.com/"})
+	} else if (uid.substring(0, 4) == 'sdrem') {
+		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/flower"})
+	} else if (uid.substring(0, 4) == 'remd') {
+		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://remedydeliverysd.com/flower"})
+	} else {
+		firebase.database().ref('c').push(uid, function(error){window.location.href = "https://greenrushsd.com/"})
+	}
 </script>
 
 
