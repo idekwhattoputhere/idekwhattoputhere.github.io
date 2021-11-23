@@ -20,6 +20,7 @@
 
 <script type="text/javascript">
 	var uid = window.location.search;
+	console.log(uid);
 	if (uid.substring(0, 4) == 'grsd') {
 		firebase.database().ref('c').push(uid, function(error){window.location.href = "https://greenrushsd.com/"})
 	} else if (uid.substring(0, 4) == 'sdrem') {
