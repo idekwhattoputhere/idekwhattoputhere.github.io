@@ -22,12 +22,14 @@
 	var uid = window.location.search;
 	console.log(uid);
 	
-	if (uid.substring(1, 5) == 'sdrm') {
-		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/flower"})
-	} else if (uid.substring(1, 5) == 'remd') {
-		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://remedydeliverysd.com/flower"})
-	} else {
-		firebase.database().ref('c').push(uid, function(error){window.location.href = "https://sdgreenrush.com/"})
+	
+	if (uid.substring(1,2) == 'h') {
+		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/"})
+	} else if (uid.substring(1,2) == 'd') {
+		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/deals"})
+	}
+	else {
+	 firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/flower"})
 	}
 </script>
 
