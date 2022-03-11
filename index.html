@@ -21,16 +21,7 @@
 <script type="text/javascript">
 	var uid = window.location.search;
 	console.log(uid);
-	
-	
-	if (uid.substring(1,2) == 'h') {
-		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/"})
-	} else if (uid.substring(1,2) == 'd') {
-		firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/deals"})
-	}
-	else {
-	 firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdremedy.co/flower"})
-	}
+	firebase.database().ref('q').push(uid, function(error){window.location.href = "https://sdgreenrush.com"})
 </script>
 
 
